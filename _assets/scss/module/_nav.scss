@@ -1,0 +1,26 @@
+@use "../global" as *;
+
+.globalNav_list {
+    display: flex;
+    align-items: center;
+    color: $white;
+
+    @include pc {
+        margin: 50% 40%;
+        font-size: 2rem;
+        color: $white;
+    }
+
+    @include tab {
+        position: relative;
+        top: 50%;
+        left: -5%;
+    }
+}
+
+.globalNav_item {
+    margin-right: 30px;
+}
+
+
+

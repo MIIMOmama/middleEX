@@ -1,0 +1,11 @@
+// このファイルからコンパイルされたcssファイルは全ページに読み込ませる。
+
+// 各htmlファイルに読み込みが必要なcssファイルは2つあるので
+// pageディレクトリから1つ選択して読み込みする必要がある。
+
+@use "foundation";
+@use "global";
+@use "module";
+@use "javascript";
+
+// globalディレクトリ内の各index.scssファイルには@forwardで読み込みしている。

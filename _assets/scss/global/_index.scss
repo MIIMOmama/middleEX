@@ -1,0 +1,6 @@
+@forward "mixin";
+@forward "setting";
+
+// 呼び出し時は
+// @use "../global" as g; 
+// + :@include g.mixin名;
