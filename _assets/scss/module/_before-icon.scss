@@ -1,0 +1,25 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.before-icon::before {
+    display: inline-block;
+    margin-right: .3em;
+}
+
+.before-icon--logo::before {
+    content: url(../img/icon/logo01.png);
+}
+
+.before-icon__text {
+
+        color: $white;
+        position: relative;
+        top: -6px;
+
+    @include font-size(32);
+
+
+    @include pc {
+            top: -10px;
+        }
+}

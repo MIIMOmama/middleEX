@@ -1,0 +1,53 @@
+// タグ指定での共通スタイル
+// jsで使用するためのクラス'js'+'-'+'クラス名'
+// 例
+// <nav class="gnav">
+// <ul class="gnav-list">
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// </ul>
+// </nav>
+
+@use '../mixin' as *;
+@use '../setting' as *;
+
+html {
+    @include pc {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+        "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+        "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+#js-hamburger {
+    display: none;
+
+    @include pc {
+        display: block;
+    }
+}
+
+.js-global-nav {
+
+    @include pc {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        height: 100vh;
+        background-color: $gray;
+        color: $white;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

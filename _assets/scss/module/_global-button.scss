@@ -1,0 +1,24 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-button {
+
+    @include pc {
+            margin-right: 15%;
+            width: 120px;
+        }
+    @include button(global)
+}
+
+.global-button--calender-left {
+    position: relative;
+    padding-right: 1.38em;
+}
+
+.global-button--calender-left::before {
+    content: url(../img/icon/calender.png);
+    position: absolute;
+    top: 50%;
+    left: 1.5em;
+    transform: translateY(-50%);
+}
