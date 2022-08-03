@@ -3,7 +3,7 @@
 
 .before-icon::before {
     display: inline-block;
-    margin-right: .3em;
+    margin-right: .3rem;
 }
 
 .before-icon--logo::before {
@@ -15,8 +15,8 @@
         color: $white;
         position: relative;
         top: -6px;
+        font-size: rem(32);
 
-    @include font-size(32);
 
 
     @include pc {

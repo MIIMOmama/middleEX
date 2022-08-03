@@ -30,7 +30,7 @@
 
     &:hover,
     &:focus {
-        box-shadow: 0 0 .5rem rgba(161, 161, 161, 0.5);
+        box-shadow: 0 0 rem(8) rgba(161, 161, 161, 0.5);
     }
 }
 
