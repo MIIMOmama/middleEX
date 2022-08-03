@@ -83,13 +83,9 @@
 }
 
 .hamburger--style[aria-expanded="true"] .hamburger__line::before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .hamburger--style[aria-expanded="true"] .hamburger__line::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }

@@ -5,6 +5,7 @@ const sass = require('gulp-dart-sass');//Dart Sass はSass公式が推奨 @use�
 const plumber = require("gulp-plumber"); // エラーが発生しても強制終了させない
 const notify = require("gulp-notify"); // エラー発生時のアラート出力
 const browserSync = require("browser-sync"); //ブラウザリロード
+const autoprefixer = require('gulp-autoprefixer');//ベンダープレフィックス自動付与
 
 
 // 入出力するフォルダを指定
@@ -23,6 +24,13 @@ const distPath = {
   'html': distBase + '/'
 };
 
+//ベンダープレフィックスを付与する条件
+const TARGET_BROWSERS = [
+  'last 2 versions',//各ブラウザの2世代前までのバージョンを担保
+  'ie >= 11'//IE11を担保
+];
+
+
 /**
  * sass
  *
@@ -37,6 +45,8 @@ const cssSass = () => {
         errorHandler: notify.onError('Error:<%= error.message %>')
       }))
     .pipe(sass({ outputStyle: 'expanded' })) //指定できるキー expanded compressed
+    .pipe(autoprefixer(TARGET_BROWSERS))// ベンダープレフィックス自動付与
+
     .pipe(gulp.dest(distPath.css, { sourcemaps: './' })) //コンパイル先
     .pipe(browserSync.stream())
     .pipe(notify({
