@@ -12,13 +12,13 @@
 
 .global-button--calender-left {
     position: relative;
-    padding-right: 1.38em;
+    padding-right: rem(22);
 }
 
 .global-button--calender-left::before {
     content: url(../img/icon/calender.png);
     position: absolute;
     top: 50%;
-    left: 1.5rem;
+    left: rem(24);
     transform: translateY(-50%);
 }
