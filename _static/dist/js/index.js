@@ -28,7 +28,6 @@ jsHamburger.addEventListener('click', function() {
         this.setAttribute('aria-expanded', 'true');
         spHeaderMenu.style.visibility = "visible";
         spHeaderMenu.setAttribute('aria-hidden', 'false')
-        console.log('ok');
     } else {
         this.setAttribute('aria-expanded', 'false')
         spHeaderMenu.style.visibility = "hidden";
