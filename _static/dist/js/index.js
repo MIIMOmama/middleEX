@@ -32,7 +32,6 @@ jsHamburger.addEventListener('click', function() {
         this.setAttribute('aria-expanded', 'false')
         spHeaderMenu.style.visibility = "hidden";
         spHeaderMenu.setAttribute('aria-hidden', 'true')
-        console.log('no');
     };
 });
 
