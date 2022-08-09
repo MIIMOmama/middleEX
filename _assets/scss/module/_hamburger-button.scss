@@ -6,14 +6,18 @@
 }
 
 .hamburger {
-    display: block;
+    display: none;
     position: fixed;
     top: 25px;
     right: 20px;
-    z-index: 999;
+    z-index: 200;
     height: 30px;
     width: 30px;
     cursor: pointer;
+
+    @include pc {
+        display: block;
+    }
 }
 
 .hamburger::before,
@@ -63,4 +67,5 @@
 .hamburger-checkbox:checked~.hamburger span {
     display: none;
 }
+
 

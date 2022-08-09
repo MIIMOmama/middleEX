@@ -3,13 +3,13 @@
 
 .global-nav__list {
     display: flex;
+
+    @include pc {
+        display: none;
+    }
 }
 
 .global-nav__item {
     color: $white;
     margin-right: 30px;
-
-    @include pc {
-        writing-mode: vertical-rl;
-    }
 }
