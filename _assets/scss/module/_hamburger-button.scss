@@ -1,91 +1,70 @@
 @use '../setting' as *;
 @use '../mixin' as *;
 
+#hamburger-checkbox {
+    display: none;
+}
+
 .hamburger {
-    display: inline-block;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: transparent;
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    z-index: 200;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 
-
-}
-
-.hamburger--style {
-    position: fixed;
-    top: 16px;
-    right: 20px;
-    z-index: 3;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 2px solid $white;
-    box-shadow: 0 0 2rem transparent;
-    outline: none;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-
-    &:hover,
-    &:focus {
-        box-shadow: 0 0 rem(8) rgba(161, 161, 161, 0.5);
-    }
-}
-
-.hamburger__line {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 18px;
-    height: 2px;
-    background-color: $white;
-    -webkit-transition: inherit;
-    transition: inherit;
-
-    &::before,
-    &::after {
-        position: absolute;
+    @include mq(max-lg) {
         display: block;
-        width: 100%;
-        height: 100%;
-        background-color: inherit;
-        content: '';
-        -webkit-transition: inherit;
-        transition: inherit;
     }
 }
 
-.hamburger__line::before {
-    top: -5px;
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    transition: .3s;
 }
 
-.hamburger__line::after {
-    top: 5px;
+.hamburger::before,
+.hamburger::after,
+.hamburger__line {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background-color: colors(white);
+    border-radius: 10px;
 }
 
-.hamburger--style[aria-expanded="true"] {
-    border: 1px solid $white;
+.hamburger::before {
+    top: 20%;
+}
+.hamburger::after {
+    bottom: 20%;
+}
+.hamburger__line {
+    top: 45%;
 }
 
-.hamburger--style[aria-expanded="true"] .hamburger__line {
-    background-color: transparent;
-
-    &::before,
-    &::after {
-        top: 0;
-        background-color: $white;
-    }
-}
-
-.hamburger--style[aria-expanded="true"] .hamburger__line::before {
+.hamburger-checkbox:checked ~ .hamburger::before {
+    top: 50%;
     transform: rotate(45deg);
-}
 
-.hamburger--style[aria-expanded="true"] .hamburger__line::after {
+}
+.hamburger-checkbox:checked ~ .hamburger::after {
+    top: 50%;
     transform: rotate(-45deg);
 }
+// .hamburger-checkbox:checked + .hamburger__line {
+//     display: none;
+// }これが効かないのはなぜ？
+// .hamburger-checkbox:checked ~ .hamburger .hamburger__line {
+//     display: none;
+// }こっちは効いた。
+// これも効いた。どっちが正解？↑↓
+.hamburger-checkbox:checked~.hamburger span {
+    display: none;
+}
+
+

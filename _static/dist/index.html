@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/style.css?v=1.0">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -30,21 +30,19 @@
     <div class="global-header__inner">
       <div class="global-header__wrap">
 
-        <h1 class="logo global-logo">
+        <h1 class="global-logo">
           <span class="before-icon before-icon--logo">
             <a class="before-icon__text" href="index.html">石井花壇</a>
           </span><!-- /.before-icon -->
         </h1><!-- /.global-logo -->
 
-        <div class="js-global-nav" area-hidden="true">
           <nav class="global-nav">
-            <ul class="global-nav__list js-global-nav__list">
+            <ul class="global-nav__list">
               <li class="global-nav__item"><a href="room.html" class="global-nav__link">お部屋</a></li><!-- /.globalNav_item -->
               <li class="global-nav__item"><a href="meal.html" class="global-nav__link">お料理</a></li><!-- /.globalNav_item -->
               <li class="global-nav__item"><a href="onsen.html" class="global-nav__link">温泉</a></li><!-- /.globalNav_item -->
             </ul><!-- /.global-nav_list -->
           </nav><!-- /.global-nav -->
-        </div>
 
       </div><!-- /.global-header__wrap -->
 
@@ -53,11 +51,18 @@
         宿泊予約
       </a><!-- /.button -->
 
-
-      <button type="button" class="hamburger hamburger--style js-hamburger" id="js-hamburger" aria-controls="js-global-nav" aria-expanded="false" area-label="メニューを開閉する">
-        <span class="hamburger__line">
-        </span>
-      </button>
+      <input id="hamburger-checkbox" class="hamburger-checkbox" type="checkbox">
+      <label class="hamburger" for="hamburger-checkbox">
+        <span class="hamburger__line"></span>
+      </label>
+      <div class="drawer-nav">
+        <ul class="drawer-nav__list">
+          <li class="drawer-nav__item"><a href="room.html" class="drawer-nav__link">お部屋</a><!-- /.drawer-nav__link --></li><!-- /.drawer-nav__item -->
+          <li class="drawer-nav__item"><a href="meal.html" class="drawer-nav__link">お料理</a><!-- /.drawer-nav__link --></li><!-- /.drawer-nav__item -->
+          <li class="drawer-nav__item"><a href="onsen.html" class="drawer-nav__link">温泉</a><!-- /.drawer-nav__link --></li><!-- /.drawer-nav__item -->
+        </ul><!-- /.drawer-nav__list -->
+      </div><!-- /.drawer-nav -->
+      <label for="drawer-nav--toggle" class="drawer-nav--background"></label>
 
     </div><!-- /.global-header__inner -->
   </header>

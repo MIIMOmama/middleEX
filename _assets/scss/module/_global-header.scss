@@ -1,6 +1,8 @@
 @use '../setting' as *;
 @use '../mixin' as *;
 
+
+
 .global-header {
     box-sizing: border-box;
     width: 100%;
@@ -11,7 +13,7 @@
     position: fixed;
     display: flex;
     align-items: center;
-    background-color: $gray;
+    background-color: colors(gray);
     height: 80px;
 }
 
