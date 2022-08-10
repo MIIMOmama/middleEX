@@ -8,7 +8,7 @@
     z-index: 199;
     transform: translateX(-100%);
     transition: .5s;
-    background-color: $gray;
+    background-color: colors(gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: $gray;
+    background-color: colors(gray);
 }
 
 
@@ -31,7 +31,7 @@
 .drawer-nav__link {
     display: block;
     padding: 15px;
-    color: $white;
+    color: colors(white);
     text-decoration: none;
     writing-mode: vertical-rl;
     font-size: rem(20);

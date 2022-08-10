@@ -4,7 +4,7 @@
 .global-logo {
     margin-right: 120px;
 
-    @include pc {
-        margin-right: 0;
-    }
+    // @include pc {
+    //     margin-right: 0;
+    // }
 }

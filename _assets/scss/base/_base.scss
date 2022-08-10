@@ -13,7 +13,7 @@
 @use '../setting' as *;
 
 html {
-    @include pc {
+    @include mq(max-lg) {
         font-size: 75%;
     }
 }
@@ -24,30 +24,3 @@ body {
         "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-#js-hamburger {
-    display: none;
-
-    @include pc {
-        display: block;
-    }
-}
-
-.js-global-nav {
-
-    @include pc {
-        position: fixed;
-        width: 100vw;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
-        height: 100vh;
-        background-color: $gray;
-        color: $white;
-        visibility: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-}

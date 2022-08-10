@@ -3,7 +3,7 @@
 
 .global-button {
 
-    @include pc {
+    @include mq(max-lg) {
             margin-right: 15%;
             width: 120px;
         }

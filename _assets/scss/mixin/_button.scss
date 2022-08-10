@@ -13,8 +13,8 @@ $initType: 'normal';
         width: 170px;
         box-sizing: border-box;
         min-width: 103px;
-        background-color: $global;
-        color: $white;
+        background-color: colors(buttonColor);
+        color: colors(white);
         font-weight: bold;
         padding: 19px 37px;
 

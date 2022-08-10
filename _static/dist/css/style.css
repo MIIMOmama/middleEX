@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   html {
     font-size: 75%;
   }
@@ -7,39 +7,6 @@
 
 body {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-#js-hamburger {
-  display: none;
-}
-@media screen and (max-width: 1080px) {
-  #js-hamburger {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .js-global-nav {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    height: 100vh;
-    background-color: #707070;
-    color: #fff;
-    visibility: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 /*----------------------------------------
@@ -461,7 +428,7 @@ th {
   top: -6px;
   font-size: 2rem;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .before-icon__text {
     top: -10px;
   }
@@ -511,18 +478,13 @@ th {
 .global-logo {
   margin-right: 120px;
 }
-@media screen and (max-width: 1080px) {
-  .global-logo {
-    margin-right: 0;
-  }
-}
 
 .global-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .global-nav__list {
     display: none;
   }
@@ -545,7 +507,7 @@ th {
   font-weight: bold;
   padding: 19px 37px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .global-button {
     margin-right: 15%;
     width: 120px;
@@ -580,7 +542,7 @@ th {
   width: 30px;
   cursor: pointer;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .hamburger {
     display: block;
   }
@@ -600,7 +562,6 @@ th {
   position: absolute;
   height: 3px;
   width: 80%;
-  margin-top: -1px;
   background-color: #fff;
   border-radius: 10px;
 }

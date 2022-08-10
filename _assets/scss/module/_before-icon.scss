@@ -12,14 +12,14 @@
 
 .before-icon__text {
 
-        color: $white;
+        color: colors(white);
         position: relative;
         top: -6px;
         font-size: rem(32);
 
 
 
-    @include pc {
+    @include mq(max-lg) {
             top: -10px;
         }
 }
