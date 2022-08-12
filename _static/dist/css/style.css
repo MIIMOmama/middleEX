@@ -478,6 +478,11 @@ th {
 .global-logo {
   margin-right: 120px;
 }
+@media screen and (max-width: 1000px) {
+  .global-logo {
+    margin-right: 0;
+  }
+}
 
 .global-nav__list {
   display: -webkit-box;

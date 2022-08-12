@@ -3,4 +3,8 @@
 
 .global-logo {
     margin-right: 120px;
+
+    @include mq(max-lg) {
+        margin-right: 0;
+    }
 }
