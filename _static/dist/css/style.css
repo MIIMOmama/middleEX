@@ -595,7 +595,7 @@ th {
           transform: rotate(-45deg);
 }
 
-.hamburger-checkbox:checked ~ .hamburger span {
+.hamburger-checkbox:checked + .hamburger .hamburger__line {
   display: none;
 }
 
