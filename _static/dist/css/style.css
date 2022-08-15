@@ -516,6 +516,7 @@ th {
 }
 @media screen and (max-width: 1000px) {
   .global-nav__list {
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -529,6 +530,8 @@ th {
     padding: 0;
     list-style-type: none;
     background-color: #707070;
+
+
   }
 }
 
@@ -536,6 +539,7 @@ th {
   color: #fff;
   margin-right: 30px;
 }
+
 @media screen and (max-width: 1000px) {
   .global-nav__item {
     margin-right: 10px;
@@ -555,6 +559,7 @@ th {
     letter-spacing: 0.75rem;
   }
 }
+
 
 .hamburger-checkbox:checked ~ .global-nav {
   -webkit-transform: translateX(0);
@@ -622,6 +627,7 @@ th {
   height: 30px;
   width: 30px;
   cursor: pointer;
+
 }
 @media screen and (max-width: 1000px) {
   .hamburger {
@@ -671,6 +677,7 @@ th {
   top: 50%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+
 }
 
 .hamburger-checkbox:checked + .hamburger .hamburger__line {
